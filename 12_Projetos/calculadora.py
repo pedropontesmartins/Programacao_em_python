@@ -16,7 +16,7 @@ def calc():
 
         opcao = input("\nEscolha uma operação: ")
         if opcao == "0":
-            print("Voltando ao menu principal!")
+            print("\033[36mVoltando ao menu principal!\033[0m")
             break
         if opcao in [ "1", "2", "3", "4", "5", "6", "7"]:
             if opcao != "5":
@@ -50,4 +50,4 @@ def calc():
                 resultado = num1*(num2/100)
                 print("Resultado = ", resultado, "%")
         else:
-            print("Operação invalida!")
+            print("\033[31mOperação invalida!\033[0m")

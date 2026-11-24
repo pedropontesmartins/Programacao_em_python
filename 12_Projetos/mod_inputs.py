@@ -23,4 +23,13 @@ def recebe_int(mensagem):
         except:
             print("Valor invalido!")
     return numero
+def recebe_float(mensagem):
+    while True:
+        try:
+            numero = float(input(mensagem).replace(",", "."))
+            break
+        except:
+            print("Valor invalido!")
+    return numero
+
 
